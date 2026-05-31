@@ -12,7 +12,7 @@ def drop(X, subset, how="any"):
 def get_train_val_test():
     df = pd.read_csv("data/train.csv")
 
-    X = df.drop(["Transported"])
+    X = df.drop(["Transported"], axis=1)
     y = df["Transported"]
 
     X_train, X_test, y_train, y_test = train_test_split(
@@ -32,7 +32,7 @@ def get_train_val_test_clean():
 
     df = drop(df, cat_cols)
 
-    X = df.drop(["Transported"])
+    X = df.drop(["Transported"], axis=1)
     y = df["Transported"]
 
     X_train, X_test, y_train, y_test = train_test_split(
