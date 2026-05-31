@@ -14,4 +14,5 @@ def run_quality_report(df: pd.DataFrame, output_path: str = "reports/data_qualit
 
 if __name__=="__main__":
     df = pd.read_csv("data/train.csv")
-    run_quality_report(df)
+    # run_quality_report(df)
+    print(df.head(10))
