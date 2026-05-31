@@ -1,6 +1,5 @@
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
-from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import FunctionTransformer
 from xgboost import XGBClassifier
 
